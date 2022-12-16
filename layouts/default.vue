@@ -14,7 +14,8 @@
   box-sizing: border-box;
 }
 body {
-    background-color: #000;
+    /*background-color: #252525;*/
+    background-color: #151515;
     color: #fff;
     font-size: 14px;
     line-height: 20px;
