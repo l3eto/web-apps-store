@@ -3,7 +3,7 @@
     <nav class="nuxt-header__nav">
         <nuxt-link class="nuxt-header__link" to="/">Welcome</nuxt-link>
         <nuxt-link class="nuxt-header__link" to="/services">Services</nuxt-link>
-        <nuxt-link class="nuxt-header__link nuxt-header__link-work" to="/proyects">Proyects</nuxt-link>
+        <nuxt-link class="nuxt-header__link nuxt-header__link-work" to="/projects">Projects</nuxt-link>
         <nuxt-link class="nuxt-header__link" to="/contact">Contact</nuxt-link>
     </nav>
   </div>

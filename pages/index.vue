@@ -1,14 +1,16 @@
 <template>
   <div class="welcome-page">
-    <div class="welcome-page__content-text">
-      <p class="welcome-page__subtitle">To the moon</p>
-      <h1 class="welcome-page__title">Web Apps Development.</h1>
-      <p class="welcome-page__description">We take care of working with clean code principles to give you an efficient service.</p>
-      <p class="welcome-page__description">We make custom designs to suit the user, but also using ux standards.</p>
-      <p class="welcome-page__description">Take a look at our services</p>
-    </div>
-  	<div class="welcome-page__content-image">
-		<img class="welcome-page__image" src="~/assets/half-moon.png" />
+	<div class="welcome-page__landing">
+		<div class="welcome-page__content-text">
+		<p class="welcome-page__subtitle">To the moon</p>
+		<h1 class="welcome-page__title">Web Apps Development.</h1>
+		<p class="welcome-page__description">We take care of working with clean code principles to give you an efficient service.</p>
+		<p class="welcome-page__description">We make custom designs to suit the user, but also using ux standards.</p>
+		<p class="welcome-page__description">Take a look at our services</p>
+		</div>
+		<div class="welcome-page__content-image">
+			<img class="welcome-page__image" src="~/assets/half-moon.png" />
+		</div>
 	</div>
   </div>
 </template>
@@ -23,9 +25,12 @@ export default Vue.extend({
 
 <style lang="scss">
 .welcome-page {
-    min-height: calc(100vh - 56px);
-    display: flex;
-    align-items: center;
+
+	&__landing {
+		min-height: calc(100vh - 56px);
+		display: flex;
+		align-items: center;
+	}
 	
 	&__content {
 		&-text {
