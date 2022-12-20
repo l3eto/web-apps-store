@@ -128,11 +128,11 @@ export default Vue.extend({
     }
 
     &__item {
-        padding: 56px 0;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
+        min-height: 450px;
     }
 
     .project-card {
