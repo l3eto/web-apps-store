@@ -29,34 +29,13 @@ export default Vue.extend({
     name: 'ProyectsPage',
     data () {
         return {
-            items: [
-                {
-                    name: 'web-c29',
-                    title: 'Web Church C29',
-                    description: 'Main website with cms content from dashboard, mailing, apis, rss and other features.',
-                    image: '/images/projects/webiglesiac29/home.png',
-                    logo: '/images/projects/webiglesiac29/logo.jpg',
-                    bgColor: '#14151d',
-                    link: 'https://barcelona.c29.es'
-                },
-                {
-                    name: 'app-c29',
-                    title: 'App Church C29',
-                    description: 'App for android and ios consuming api from main website, notifications, users and other features.',
-                    image: '/images/projects/appiglesiac29/home.png',
-                    logo: '/images/projects/webiglesiac29/logo.jpg',
-                    bgColor: '#141d16'
-                },
-                {
-                    name: 'web-oviedo',
-                    title: 'Web Church Oviedo',
-                    description: 'Main website with cms content from dashboard, mailing, apis, rss and other features.',
-                    image: '/images/projects/webiglesiaoviedo/home.png',
-                    logo: '/images/projects/webiglesiaoviedo/logo.jpg',
-                    bgColor: '#1d1414'
-                }
-            ]
+            items: []
         }
+    },
+    async fetch () {
+        const response = await fetch(`http://localhost:3000/api/projects`);
+        const { projects } = await response.json();
+        this.items = projects;
     },
     methods: {
         getStyleBg (color: String) {
@@ -136,7 +115,7 @@ export default Vue.extend({
     }
 
     .project-card {
-        max-width: 700px;
+        width: 650px;
     }
 }
 </style>

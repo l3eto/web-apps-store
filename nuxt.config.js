@@ -42,6 +42,10 @@ export default {
   build: {
   },
 
+  serverMiddleware: [
+    { path: '/api/projects', handle: '~/server_middleware/api/projects.js' }
+  ],
+
   server: {
     host: "0.0.0.0",
     port: process.env.PORT || 3000,
